@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Clone Code from GitHub') {
             steps {
-                git 'https://github.com/JaiBhargav/sample-quizapp.git'
+                git 'https://github.com/Bhavadee/docker-jenkins-sample.git'
             }
         }
         stage('Copy Files to Apache Container') {
@@ -38,3 +38,4 @@ pipeline {
         }
     }
 }
+
