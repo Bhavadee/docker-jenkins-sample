@@ -5,11 +5,12 @@ pipeline {
         APP_DIR = "/var/www/html"
     }
     stages {
-        stage('Clone Code from GitHub') {
-            steps {
-                git 'https://github.com/Bhavadee/docker-jenkins-sample.git'
-            }
-        }
+       stage('Clone Code from GitHub') {
+    steps {
+        git branch: 'main', url: 'https://github.com/Bhavadee/docker-jenkins-sample.git'
+    }
+}
+
         stage('Copy Files to Apache Container') {
             steps {
                 script {
